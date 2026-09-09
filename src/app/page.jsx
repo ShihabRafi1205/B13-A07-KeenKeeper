@@ -1,7 +1,11 @@
+import Banner from "@/components/banner/Banner";
+import Friends from "@/components/friends/Friends";
+
 const HomePage = () => {
   return (
-    <div>
-      <h1 className="text-5xl">I am from Home</h1>
+    <div className=" bg-[#f8fafc] ">
+      <Banner />
+      <Friends />
     </div>
   );
 };
