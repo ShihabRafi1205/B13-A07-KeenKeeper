@@ -43,7 +43,6 @@ const TimelinePage = () => {
             <option value="Call">Call</option>
             <option value="Text">Text</option>
             <option value="Video">Video</option>
-            <option value="Meetup">Meetup</option>
           </select>
         </div>
 
