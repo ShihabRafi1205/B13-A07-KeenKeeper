@@ -11,32 +11,13 @@ import {
   FaArrowLeft,
 } from "react-icons/fa";
 import QuickCheckIn from "@/components/friends/QuickCheckIn";
-
-
-const getFriend = async (id) => {
-  try {
-    const res = await fetch(`http://localhost:5000/friends/${id}`, {
-      cache: "no-store",
-    });
-
-    if (!res.ok) return null;
-
-    const data = await res.json();
-
-  
-    if (!data || !data.id) return null;
-
-    return data;
-  } catch (error) {
-    console.error("Failed to fetch friend:", error);
-    return null;
-  }
-};
+import data from "@/data/friends.json";
+const friends = data.friends;
 
 const FriendDetailsPage = async ({ params }) => {
   const { id } = await params;
-  const friend = await getFriend(id);
 
+  const friend = friends.find((f) => f.id === parseInt(id));
 
   if (!friend) {
     notFound();
@@ -51,7 +32,6 @@ const FriendDetailsPage = async ({ params }) => {
   return (
     <div className="bg-[#f8fafc] min-h-screen py-8 px-4">
       <div className="max-w-6xl mx-auto">
-
         <Link
           href="/"
           className="inline-flex items-center gap-2 text-sm text-gray-600 hover:text-gray-900 mb-5"
@@ -60,7 +40,6 @@ const FriendDetailsPage = async ({ params }) => {
         </Link>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
- 
           <div className="lg:col-span-1 flex flex-col gap-4">
             <div className="bg-white rounded-lg shadow-sm p-6 text-center">
               <Image
@@ -75,7 +54,6 @@ const FriendDetailsPage = async ({ params }) => {
                 {friend.name}
               </h2>
 
-          
               <span
                 className={`mt-2 inline-block rounded-full px-3 py-1 text-[10px] font-semibold uppercase ${
                   statusColors[friend.status] || "bg-gray-400 text-white"
@@ -84,7 +62,6 @@ const FriendDetailsPage = async ({ params }) => {
                 {friend.status}
               </span>
 
-     
               <div className="flex flex-wrap justify-center gap-1 mt-2">
                 {friend.tags?.map((tag, i) => (
                   <span
@@ -96,13 +73,11 @@ const FriendDetailsPage = async ({ params }) => {
                 ))}
               </div>
 
-       
               <p className="mt-1 text-[11px] text-gray-400">
                 Preferred: {friend.email}
               </p>
             </div>
 
-        
             <div className="bg-white rounded-lg shadow-sm overflow-hidden">
               <button className="w-full flex items-center gap-2 px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 border-b border-gray-100 transition">
                 <FaClock className="text-gray-500" /> Snooze 2 Weeks
@@ -116,9 +91,7 @@ const FriendDetailsPage = async ({ params }) => {
             </div>
           </div>
 
-       
           <div className="lg:col-span-2 flex flex-col gap-6">
-            {/* Stats Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <div className="bg-white rounded-lg shadow-sm p-5 text-center">
                 <h3 className="text-2xl font-bold text-[#1e293b]">
@@ -146,7 +119,6 @@ const FriendDetailsPage = async ({ params }) => {
               </div>
             </div>
 
-         
             <div className="bg-white rounded-lg shadow-sm p-5">
               <div className="flex items-center justify-between mb-3">
                 <h3 className="text-sm font-semibold text-[#1e293b]">
@@ -164,7 +136,6 @@ const FriendDetailsPage = async ({ params }) => {
               </p>
             </div>
 
-       
             <QuickCheckIn friendName={friend.name} friendId={friend.id} />
           </div>
         </div>

@@ -1,9 +1,10 @@
 import React from "react";
 import FriendsCard from "@/components/friends/FriendsCard";
+import data from "@/data/friends.json";
+const friends = data.friends;
 
-const Friends = async () => {
-  const friendsData = await fetch("http://localhost:5000/friends");
-  const friends = await friendsData.json();
+const Friends = () => {
+  
 
   return (
     <div className="mb-8 bg-[#f8fafc]">
