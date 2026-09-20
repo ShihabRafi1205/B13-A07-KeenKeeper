@@ -11,8 +11,7 @@ import {
   FaArrowLeft,
 } from "react-icons/fa";
 import QuickCheckIn from "@/components/friends/QuickCheckIn";
-import data from "@/data/friends.json";
-const friends = data.friends;
+import friends from "@/data/friends.json";
 
 const FriendDetailsPage = async ({ params }) => {
   const { id } = await params;

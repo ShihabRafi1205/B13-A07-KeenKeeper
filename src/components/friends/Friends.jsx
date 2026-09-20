@@ -1,11 +1,8 @@
 import React from "react";
 import FriendsCard from "@/components/friends/FriendsCard";
-import data from "@/data/friends.json";
-const friends = data.friends;
+import friends from "@/data/friends.json"; //
 
 const Friends = () => {
-  
-
   return (
     <div className="mb-8 bg-[#f8fafc]">
       <div className="max-w-[1000px] mx-auto px-4 py-6">

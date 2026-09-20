@@ -1,100 +1,98 @@
-{
-  "friends": [
-    {
-      "id": 1,
-      "name": "Sarah Rahman",
-      "picture": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150",
-      "email": "sarah.r@email.com",
-      "days_since_contact": 45,
-      "status": "overdue",
-      "tags": ["college", "best friend", "travel buddy"],
-      "bio": "We've been inseparable since freshman year. She's now a doctor in Chicago but we still try to meet up whenever she visits home.",
-      "goal": 14,
-      "next_due_date": "2025-06-10"
-    },
-    {
-      "id": 2,
-      "name": "Michael Chen",
-      "picture": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150",
-      "email": "michael.c@email.com",
-      "days_since_contact": 28,
-      "status": "overdue",
-      "tags": ["work", "mentor", "tech"],
-      "bio": "My former team lead at Google. He taught me everything I know about system design and still gives me career advice.",
-      "goal": 21,
-      "next_due_date": "2025-06-25"
-    },
-    {
-      "id": 3,
-      "name": "Priya Sharma",
-      "picture": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150",
-      "email": "priya.s@email.com",
-      "days_since_contact": 12,
-      "status": "almost due",
-      "tags": ["high school", "childhood friend", "family"],
-      "bio": "We grew up in the same neighborhood and our families are still close. She's an architect and we always joke about designing our future homes next to each other.",
-      "goal": 14,
-      "next_due_date": "2025-07-15"
-    },
-    {
-      "id": 4,
-      "name": "David Okafor",
-      "picture": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150",
-      "email": "david.o@email.com",
-      "days_since_contact": 5,
-      "status": "on-track",
-      "tags": ["gym", "workout", "motivation"],
-      "bio": "My gym partner who pushes me to be better every single day. We've been training together for 2 years and he's helped me achieve my fitness goals.",
-      "goal": 7,
-      "next_due_date": "2025-07-10"
-    },
-    {
-      "id": 5,
-      "name": "Emily Watson",
-      "picture": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=150",
-      "email": "emily.w@email.com",
-      "days_since_contact": 30,
-      "status": "overdue",
-      "tags": ["book club", "literature", "close friend"],
-      "bio": "We met at a local bookstore 5 years ago and bonded over our love for Murakami. She's a high school English teacher and we share book recommendations monthly.",
-      "goal": 21,
-      "next_due_date": "2025-06-18"
-    },
-    {
-      "id": 6,
-      "name": "Ahmed Hassan",
-      "picture": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150",
-      "email": "ahmed.h@email.com",
-      "days_since_contact": 8,
-      "status": "on-track",
-      "tags": ["neighbor", "cooking", "foodie"],
-      "bio": "My neighbor who taught me how to make authentic Egyptian dishes. We have a tradition of cooking together every other Sunday and sharing meals with the neighborhood.",
-      "goal": 14,
-      "next_due_date": "2025-07-08"
-    },
-    {
-      "id": 7,
-      "name": "Lisa Kim",
-      "picture": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150",
-      "email": "lisa.k@email.com",
-      "days_since_contact": 18,
-      "status": "almost due",
-      "tags": ["university", "research", "academic"],
-      "bio": "We did our Masters together and collaborated on multiple research papers. She's now a PhD candidate and we still discuss our research projects regularly.",
-      "goal": 21,
-      "next_due_date": "2025-07-22"
-    },
-    {
-      "id": 8,
-      "name": "James Rodriguez",
-      "picture": "https://images.unsplash.com/photo-1504257432389-52343af06ae3?w=150",
-      "email": "james.r@email.com",
-      "days_since_contact": 3,
-      "status": "on-track",
-      "tags": ["music", "band", "creative"],
-      "bio": "Lead guitarist in my band for the past 4 years. We've performed at over 50 shows together and he's been my creative partner since we started making music.",
-      "goal": 7,
-      "next_due_date": "2025-07-12"
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "name": "Sarah Rahman",
+    "picture": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150",
+    "email": "sarah.r@email.com",
+    "days_since_contact": 45,
+    "status": "overdue",
+    "tags": ["college", "best friend", "travel buddy"],
+    "bio": "We've been inseparable since freshman year. She's now a doctor in Chicago but we still try to meet up whenever she visits home.",
+    "goal": 14,
+    "next_due_date": "2025-06-10"
+  },
+  {
+    "id": 2,
+    "name": "Michael Chen",
+    "picture": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150",
+    "email": "michael.c@email.com",
+    "days_since_contact": 28,
+    "status": "overdue",
+    "tags": ["work", "mentor", "tech"],
+    "bio": "My former team lead at Google. He taught me everything I know about system design and still gives me career advice.",
+    "goal": 21,
+    "next_due_date": "2025-06-25"
+  },
+  {
+    "id": 3,
+    "name": "Priya Sharma",
+    "picture": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150",
+    "email": "priya.s@email.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["high school", "childhood friend", "family"],
+    "bio": "We grew up in the same neighborhood and our families are still close. She's an architect and we always joke about designing our future homes next to each other.",
+    "goal": 14,
+    "next_due_date": "2025-07-15"
+  },
+  {
+    "id": 4,
+    "name": "David Okafor",
+    "picture": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150",
+    "email": "david.o@email.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["gym", "workout", "motivation"],
+    "bio": "My gym partner who pushes me to be better every single day. We've been training together for 2 years and he's helped me achieve my fitness goals.",
+    "goal": 7,
+    "next_due_date": "2025-07-10"
+  },
+  {
+    "id": 5,
+    "name": "Emily Watson",
+    "picture": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=150",
+    "email": "emily.w@email.com",
+    "days_since_contact": 30,
+    "status": "overdue",
+    "tags": ["book club", "literature", "close friend"],
+    "bio": "We met at a local bookstore 5 years ago and bonded over our love for Murakami. She's a high school English teacher and we share book recommendations monthly.",
+    "goal": 21,
+    "next_due_date": "2025-06-18"
+  },
+  {
+    "id": 6,
+    "name": "Ahmed Hassan",
+    "picture": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150",
+    "email": "ahmed.h@email.com",
+    "days_since_contact": 8,
+    "status": "on-track",
+    "tags": ["neighbor", "cooking", "foodie"],
+    "bio": "My neighbor who taught me how to make authentic Egyptian dishes. We have a tradition of cooking together every other Sunday and sharing meals with the neighborhood.",
+    "goal": 14,
+    "next_due_date": "2025-07-08"
+  },
+  {
+    "id": 7,
+    "name": "Lisa Kim",
+    "picture": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150",
+    "email": "lisa.k@email.com",
+    "days_since_contact": 18,
+    "status": "almost due",
+    "tags": ["university", "research", "academic"],
+    "bio": "We did our Masters together and collaborated on multiple research papers. She's now a PhD candidate and we still discuss our research projects regularly.",
+    "goal": 21,
+    "next_due_date": "2025-07-22"
+  },
+  {
+    "id": 8,
+    "name": "James Rodriguez",
+    "picture": "https://images.unsplash.com/photo-1504257432389-52343af06ae3?w=150",
+    "email": "james.r@email.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["music", "band", "creative"],
+    "bio": "Lead guitarist in my band for the past 4 years. We've performed at over 50 shows together and he's been my creative partner since we started making music.",
+    "goal": 7,
+    "next_due_date": "2025-07-12"
+  }
+]
